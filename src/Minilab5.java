@@ -5,11 +5,11 @@ import java.awt.event.ActionListener;
 
 public class Minilab5 extends JFrame implements ActionListener {
 
-    private JPanel panel = new JPanel();
-    private JCheckBox red = new JCheckBox("Röd",false);
-    private JCheckBox yellow = new JCheckBox("Gul",false);
-    private JCheckBox blue = new JCheckBox("Blå",false);
-    private JLabel label = new JLabel("Show me the colors!");
+    private final JPanel panel = new JPanel();
+    private final JCheckBox red = new JCheckBox("Röd",false);
+    private final JCheckBox yellow = new JCheckBox("Gul",false);
+    private final JCheckBox blue = new JCheckBox("Blå",false);
+    private final JLabel label = new JLabel("Show me the colors!");
 
     public Minilab5(){
         panel.setLayout(new GridLayout(4,1));
