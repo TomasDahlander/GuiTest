@@ -101,24 +101,24 @@ public class TickTackToe extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // Kollar vilken knapp som blivit tryckt
         if(e.getSource() == button1_1 && button1_1.getText().equals("")) performChoice(button1_1);
-        if(e.getSource() == button1_2 && button1_2.getText().equals(" ")) performChoice(button1_2);
-        if(e.getSource() == button1_3 && button1_3.getText().equals("  ")) performChoice(button1_3);
-        if(e.getSource() == button2_1 && button2_1.getText().equals("   ")) performChoice(button2_1);
-        if(e.getSource() == button2_2 && button2_2.getText().equals("    ")) performChoice(button2_2);
-        if(e.getSource() == button2_3 && button2_3.getText().equals("")) performChoice(button2_3);
-        if(e.getSource() == button3_1 && button3_1.getText().equals(" ")) performChoice(button3_1);
-        if(e.getSource() == button3_2 && button3_2.getText().equals("  ")) performChoice(button3_2);
-        if(e.getSource() == button3_3 && button3_3.getText().equals("   ")) performChoice(button3_3);
+        else if(e.getSource() == button1_2 && button1_2.getText().equals(" ")) performChoice(button1_2);
+        else if(e.getSource() == button1_3 && button1_3.getText().equals("  ")) performChoice(button1_3);
+        else if(e.getSource() == button2_1 && button2_1.getText().equals("   ")) performChoice(button2_1);
+        else if(e.getSource() == button2_2 && button2_2.getText().equals("    ")) performChoice(button2_2);
+        else if(e.getSource() == button2_3 && button2_3.getText().equals("")) performChoice(button2_3);
+        else if(e.getSource() == button3_1 && button3_1.getText().equals(" ")) performChoice(button3_1);
+        else if(e.getSource() == button3_2 && button3_2.getText().equals("  ")) performChoice(button3_2);
+        else if(e.getSource() == button3_3 && button3_3.getText().equals("   ")) performChoice(button3_3);
 
         // Kollar om vinst har inträffat
         if(checkIfWin(button1_1,button1_2, button1_3)) setWin(button1_1,button1_2,button1_3);
-        if(checkIfWin(button2_1,button2_2, button2_3)) setWin(button2_1,button2_2,button2_3);
-        if(checkIfWin(button3_1,button3_2, button3_3)) setWin(button3_1,button3_2,button3_3);
-        if(checkIfWin(button1_1,button2_1, button3_1)) setWin(button1_1,button2_1,button3_1);
-        if(checkIfWin(button1_2,button2_2, button3_2)) setWin(button1_2,button2_2,button3_2);
-        if(checkIfWin(button1_3,button2_3, button3_3)) setWin(button1_3,button2_3,button3_3);
-        if(checkIfWin(button1_1,button2_2, button3_3)) setWin(button1_1,button2_2,button3_3);
-        if(checkIfWin(button1_3,button2_2, button3_1)) setWin(button1_3,button2_2,button3_1);
+        else if(checkIfWin(button2_1,button2_2, button2_3)) setWin(button2_1,button2_2,button2_3);
+        else if(checkIfWin(button3_1,button3_2, button3_3)) setWin(button3_1,button3_2,button3_3);
+        else if(checkIfWin(button1_1,button2_1, button3_1)) setWin(button1_1,button2_1,button3_1);
+        else if(checkIfWin(button1_2,button2_2, button3_2)) setWin(button1_2,button2_2,button3_2);
+        else if(checkIfWin(button1_3,button2_3, button3_3)) setWin(button1_3,button2_3,button3_3);
+        else if(checkIfWin(button1_1,button2_2, button3_3)) setWin(button1_1,button2_2,button3_3);
+        else if(checkIfWin(button1_3,button2_2, button3_1)) setWin(button1_3,button2_2,button3_1);
 
         // kollar om det finns drag kvar
         if(movesLeft == 0) {

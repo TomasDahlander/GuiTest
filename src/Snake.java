@@ -11,7 +11,7 @@ public class Snake extends JFrame implements KeyListener {
     List<Point> points = new ArrayList<>();
     List<JLabel> labels = new ArrayList<>();
     int gameSideSize = 10;
-    int length = gameSideSize * gameSideSize;  // 64
+    int length = gameSideSize * gameSideSize;  // 100
     Point position;
     int snakeLength = 5;
 
@@ -94,7 +94,7 @@ public class Snake extends JFrame implements KeyListener {
     }
 
     public void remakeSnake(){
-        snake.add(new Point(position)); // Denna lägger inte till points som jag har tänkt....
+        snake.add(new Point(position));
         snake.remove(0);
     }
 

@@ -6,9 +6,10 @@ public class MouseListernerTest extends JFrame  {
 
     JPanel panel = new JPanel();
     JButton button = new JButton("En knapp");
+//    JButton buttonToMove;
+//    JLabel label = new JLabel("label");
 
     public MouseListernerTest(){
-
         MouseAdapter myListener = new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
